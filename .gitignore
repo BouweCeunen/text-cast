@@ -6,4 +6,4 @@ installerMAC.sh
 removerLINUX.sh
 installerLINUX.sh	
 removerMAC.sh
-
+.gitignore
