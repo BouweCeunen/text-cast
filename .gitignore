@@ -1,9 +1,5 @@
 MAC/rant
 LINUX/rant
 WINDOWS/rant
-handig
-installerMAC.sh
-removerLINUX.sh
-installerLINUX.sh	
-removerMAC.sh
+rant/
 .gitignore
