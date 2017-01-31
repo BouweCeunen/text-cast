@@ -4,3 +4,6 @@ LINUX/rant
 WINDOWS/rant
 rant/
 .gitignore
+MAC/*.pyc
+LINUX/*.pyc
+WINDOWS/*.pyc
