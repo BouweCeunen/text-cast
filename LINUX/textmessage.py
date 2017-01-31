@@ -4,14 +4,14 @@ from messagePrinter import printMessage
 import sys
 import os
 import getpass
-import os 
+import os
 
 class TextMessage:
 
 	def __init__(self):
+		self.directory = os.path.abspath(__file__).rsplit('/',1)[0] + '/' 
+		self.iconpath = 'dialog-information'
 		try:
-			self.directory = os.path.abspath(__file__).rsplit('/',1)[0] + '/' 
-			self.iconpath = ''
 			if len(sys.argv) == 2:
 				# self.UDPBroadcastReceivePort = 4090
 				# self.UDPBroadcastReceiver()
@@ -22,7 +22,7 @@ class TextMessage:
 				# call(['sudo','-u',getpass.getuser(),'-H','notify-send', '-u', 'critical', 'ERROR args'])
 				call(['notify-send', '-u', 'critical', '-i', self.iconpath, 'Error', 'ERROR args'])
 		except Exception as e:
-			call(['notify-send', '-u', 'critical', '-i', self.iconpath + 'msgicon.png', 'Error', str(e)])
+			call(['notify-send', '-u', 'critical', '-i', self.iconpath, 'Error', str(e)])
 
 
 	def UDPBroadcastReceiver(self):
@@ -31,7 +31,7 @@ class TextMessage:
 
 		call(['notify-send', '-u', 'critical', '-i', self.iconpath, 'Enabled' ,"TextMessage notify enabled on port "+str(self.UDPBroadcastReceivePort)])
 
-		while True:z
+		while True:
 			msg = self.getInputUDP()
 			if (msg is None):
 				continue

@@ -8,8 +8,9 @@ import getpass
 class TextMessage:
 
 	def __init__(self):
+		self.directory = os.path.abspath(__file__).rsplit('/',1)[0] + '/' 
+		self.iconpath = ''
 		try:
-			self.directory = os.path.abspath(__file__).rsplit('/',1)[0] + '/' 
 			if len(sys.argv) == 2:
 				# self.UDPBroadcastReceivePort = 4090
 				# self.UDPBroadcastReceiver()
@@ -27,6 +28,8 @@ class TextMessage:
 		self.sock = socket(AF_INET, SOCK_DGRAM)
 		self.sock.bind(('',self.UDPBroadcastReceivePort))
 
+		messg = 'Textcast enabled on port ' + str(self.UDPBroadcastReceivePort)
+		call(['osascript','-e','display notification "Enabled" with title "' + messg + '"'])
 
 		while True:
 			msg = self.getInputUDP()
