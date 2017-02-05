@@ -22,6 +22,8 @@ The Textcast app is needed to broadcast your textmessages over the network as so
 
 https://play.google.com/store/apps/details?id=com.bouweceunen.textcast
 
+[![](http://www.bouweceunen.com/textcast/textcast.png)](http://www.bouweceunen.com/textcast/textcast.png)
+
 ### macOS preview
 [![](http://www.bouweceunen.com/textcast/macOS.png)](http://www.bouweceunen.com/textcast/macOS.png)
 ### Windows preview
