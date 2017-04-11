@@ -12,7 +12,6 @@ class TextMessage:
 			self.file_name = self.directory + 'notifscript.ps1'
 			if len(sys.argv) == 2:
 				# self.UDPBroadcastReceivePort = 4090
-				# self.UDPBroadcastReceiver()
 
 				self.UDPBroadcastReceivePort = int(sys.argv[1])
 				self.UDPBroadcastReceiver()

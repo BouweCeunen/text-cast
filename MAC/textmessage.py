@@ -13,7 +13,6 @@ class TextMessage:
 		try:
 			if len(sys.argv) == 2:
 				# self.UDPBroadcastReceivePort = 4090
-				# self.UDPBroadcastReceiver()
 
 				self.UDPBroadcastReceivePort = int(sys.argv[1])
 				self.UDPBroadcastReceiver()
