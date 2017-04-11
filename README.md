@@ -14,7 +14,7 @@ Run this command in your terminal of choice.
 ```sh
 $ python textmessage.py 4090
 ```
-This will run the python script along with port 4090 to listen on UDP broadcast messages in a specific format. This port has to be the same on your Textcast app in order to work. Note that anyone in your network UDP listening on that specific port will also get the text messages.
+This will run the python script along with port 4090, which is the same port specified on the Textcast app (can be changed), to listen on UDP broadcast messages in a specific format. This port has to be the same on your Textcast app in order to work. Note that anyone in your network UDP listening on that specific port will also get the text messages.
 
 ### Textcast app
 
