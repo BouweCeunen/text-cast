@@ -28,7 +28,7 @@ class TextMessage:
 		self.sock.bind(('',self.UDPBroadcastReceivePort))
 
 		messg = 'Textcast enabled on port ' + str(self.UDPBroadcastReceivePort)
-		call(['osascript','-e','display notification "Enabled" with title "' + messg + '"'])
+		call(['osascript','-e','display notification "' + messg + '" with title "Enabled"'])
 
 		while True:
 			msg = self.getInputUDP()
