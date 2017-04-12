@@ -1,6 +1,8 @@
 # Textcast - Text messages on screen
 
-Textcast will allow you to view textmessages directly on your computer screen.  Make sure to check Textsend (https://play.google.com/store/apps/details?id=com.bouweceunen.textsend) to send text messages from your computer in that way you wont need to touch your phone to send and receive text messages! It uses the Textcast app along with the software to run on your computer. The Android application broadcasts your text messages over UDP in your network over a specific port which in turn will be received by the software running on your computer. 
+Textcast will allow you to view textmessages directly on your computer screen. It uses the Textcast app along with the software to run on your computer. The Android application broadcasts your text messages over UDP in your network over a specific port which in turn will be received by the software running on your computer. 
+
+Make sure to check Textsend (https://play.google.com/store/apps/details?id=com.bouweceunen.textsend) to send text messages from your computer in that way you wont need to touch your phone to send and receive text messages! 
 
 Feel free to let me know if something isn't working as it should at bouwe.ceunen@gmail.com
 
