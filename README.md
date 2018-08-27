@@ -1,4 +1,4 @@
-# Textcast - Text messages on screen
+# Textcast - Text messages on screen (UNMAINTAINED)
 
 Textcast will allow you to view text messages directly on your computer screen. It uses the Textcast app along with the software to run on your computer. The Android application broadcasts your text messages over UDP in your network over a specific port which in turn will be received by the software running on your computer. 
 
